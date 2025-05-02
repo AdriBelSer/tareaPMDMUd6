@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">PMDM06</string>
+    <!--Marker titles-->
+    <string name="marker_title_1station">Jungle Rollers Apples</string>
+    <string name="marker_title_2station">Cortex Tower"</string>
+    <string name="marker_title_3station">N. Sanity Beach Dices</string>
+    <string name="marker_title_4station">The Great Gate Boxes</string>
+    <string name="marker_title_5station">Toxic Waste Balloons</string>
+    <string name="marker_title_6station">High Road Basket</string>
+    <string name="marker_title_7station">Boulders Hide</string>
+    <string name="marker_title_8station">Slippery Climb</string>
+    <string name="marker_title_9station">Temple Ruins Riddle</string>
+    <string name="marker_title_10station">Hog Wild</string>
+    <!--Marker snippet-->
+    <string name="marker_snippet_1station">Primera prueba</string>
+    <string name="marker_snippet_2station">Segunda prueba</string>
+    <string name="marker_snippet_3station">Tercera prueba</string>
+    <string name="marker_snippet_4station">Cuarta prueba</string>
+    <string name="marker_snippet_5station">Quinta prueba</string>
+    <string name="marker_snippet_6station">Sexta prueba</string>
+    <string name="marker_snippet_7station">Séptima prueba</string>
+    <string name="marker_snippet_8station">Octava prueba</string>
+    <string name="marker_snippet_9station">Novena prueba</string>
+    <string name="marker_snippet_10station">Última prueba</string>
+
+    <!--Dialog titles-->
+    <string name="dialog_title_1station">Encontrar las 10 frutas wumpas</string>
+    <string name="dialog_title_2station">Hacer una torre de cartas de 3 pisos</string>
+    <string name="dialog_title_3station">Tirar los dados y acertar en una diana los números que salgan</string>
+    <string name="dialog_title_4station">Salta sobre 5 cajas</string>
+    <string name="dialog_title_5station">Romper 3 globos con un casco con una chincheta y las manos atadas a la espalda</string>
+    <string name="dialog_title_6station">Encesta en una canasta con los ojos vendados</string>
+    <string name="dialog_title_7station">Encontrar la pista en un cubo lleno de pelonas de ping pong</string>
+    <string name="dialog_title_8station">Caminar por un bordillo con vasos de agua en las manos sin derramarla</string>
+    <string name="dialog_title_9station">Resolver la adivinanza</string>
+    <string name="dialog_title_10station">Adivinar objetos con los ojos vendados</string>
+
+    <!--Dialog texts-->
+    <string name="dialog_txt_1station">Las wumpas han sido robadas por unos traviesos armadillos y escondidas entre las palmeras del bosque tropical. Crash debe rebuscar entre arbustos, debajo de hojas y en lo alto de troncos huecos para recuperarlas antes de que Coco se quede sin desayuno.</string>
+    <string name="dialog_txt_2station">En un rincón soleado de la isla, los Tikis retan a Crash a construir una torre sagrada con cartas de coco. Pero el viento sopla, las cartas se deslizan y, por alguna razón, una gallina no para de graznar cerca...</string>
+    <string name="dialog_txt_3station">El malvado Doctor N. Gin ha instalado una ruleta loca en un laboratorio lleno de dardos, dados y explosiones. Crash lanza los dados y debe acertar con frutas explosivas justo en la diana que marca el número. ¡Que no explote nada... todavía!</string>
+    <string name="dialog_txt_4station">En un cañón con plataformas flotantes, cinco cajas Nitro se esconden entre cajas normales. Crash debe saltar sobre ellas sin caer ni explotar. Una máscara Aku Aku murmura: ‘Esto me suena peligroso…</string>
+    <string name="dialog_txt_5station">Crash, con un casco ridículo decorado con una chincheta, debe explotar globos de agua colgantes mientras unos loros le lanzan cacahuetes desde los árboles. Las risas de los marsupiales retumban por todo el valle.</string>
+    <string name="dialog_txt_6station">En una cancha de baloncesto improvisada entre dos palmeras, Crash debe encestar una fruta mientras lleva los ojos vendados... y Coco le grita instrucciones contradictorias desde el lado contrario.</string>
+    <string name="dialog_txt_7station">Una pista secreta está escondida entre cientos de pelotas saltarinas en un cubo gigante custodiado por un mono hiperactivo. Crash debe buscar rápido… antes de que el mono empiece a lanzárselas</string>
+    <string name="dialog_txt_8station">En una pasarela estrecha entre acantilados, Crash lleva dos vasos sagrados de agua. Debe caminar sin derramar ni una gota, mientras una tribu hace temblar el suelo al ritmo de tambores.</string>
+    <string name="dialog_txt_9station">Un antiguo altar presenta una adivinanza grabada con símbolos."No soy redonda ni alargada, soy tropical y algo peluda. Por fuera marrón arrugada, por dentro verde con ayuda." Crash la observa rascándose la cabeza… ‘¿Peluda y marrón por fuera…? Hmm… ¿Una roca con pelo?’ Solo respondiendo bien se abre la puerta secreta.</string>
+    <string name="dialog_txt_10station">“Tres urnas mágicas ocultan objetos misteriosos. Crash debe meter las manos a ciegas y decir qué hay en cada una: ¿Una serpiente de goma? ¿Un coco mohoso? ¿Unas gafas de Cortex? ¡Quién sabe!”</string>
+
+</resources>
