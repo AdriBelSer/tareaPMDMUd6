@@ -63,19 +63,19 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .title(getString(R.string.marker_title_1station))
                 .snippet(getString(R.string.marker_snippet_1station))
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.img_mkr1station)));
-//Mostrar ventana con la informacion de la actividad
+
+        //Mostrar ventana con la informacion breve de la actividad
         mMap.setOnMarkerClickListener(marker -> {
             marker.showInfoWindow(); // mostramos el título y snippet
             return true; // true si consumes el evento (para evitar zoom automático)
         });
+        // Al pulsar en la ventana del marcador, abrimos el FragmentDialog
         mMap.setOnInfoWindowClickListener(marker -> {
-            // Al pulsar en la ventana del marcador, abrimos el FragmentDialog
-            String titulo = marker.getTitle();
-            String descripcion = marker.getSnippet();
-
-            // TODO Crea y muestra tu DialogFragment
+            // TODO Crea y muestra tu DialogFragment, cambiar por el toast
+            /*String titulo = getString(R.string.dialog_title_1station);
+            String descripcion = getString(R.string.dialog_txt_1station);
             Toast toast = Toast.makeText(getApplicationContext(), titulo +" "+ descripcion, Toast.LENGTH_SHORT);
-            toast.show();
+            toast.show();*/
         });
 
         mMap.addMarker(new MarkerOptions()
@@ -150,6 +150,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         }
                     });
         }
+    }
+
+    public void createStation(){
+
+
+
     }
 
 
