@@ -17,9 +17,11 @@
         android:id="@+id/switchLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:thumbTint="@color/switch_thumb"
+        app:trackTint="@color/switch_track"
         app:layout_constraintTop_toTopOf="@id/main"
         app:layout_constraintStart_toStartOf="@id/main"
-        android:layout_margin="@dimen/activity_padding"
+        android:layout_margin="@dimen/switch_margin"
         android:text="@string/switch_txt"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

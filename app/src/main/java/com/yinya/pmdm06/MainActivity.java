@@ -2,8 +2,10 @@ package com.yinya.pmdm06;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -20,10 +22,14 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.yinya.pmdm06.databinding.ActivityMainBinding;
+import com.yinya.pmdm06.databinding.FragmentStationBinding;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, StationCallback {
+    private ActivityMainBinding binding;
     //LUGARES
     private final LatLng mrk1station = new LatLng(36.80934308883409, -2.5832089509371428);
     private final LatLng mrk2station = new LatLng(37.6322, -3.8214);
@@ -86,7 +92,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         if (mapFragment != null) {
@@ -95,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // Inicializa el cliente de ubicación
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        binding.switchLocation.setChecked(true);
 
     }
 
@@ -143,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         // Al pulsar en la ventana del marcador, abrimos el FragmentDialog
         mMap.setOnInfoWindowClickListener(marker -> {
             StationFragment dialog = new StationFragment((Station) marker.getTag(), this::onStationCompleted);
-            dialog.show(this.getSupportFragmentManager(),"");
+            dialog.show(this.getSupportFragmentManager(), "");
         });
 
         //Petición de permisos de ubicación al usuario mediante dialogo
@@ -155,6 +165,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         showMyLocationOnMap();
+        switchLocation();
+
+        try {
+            boolean success = mMap.setMapStyle(
+                    MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style)
+            );
+            if (!success) {
+                Log.e("MapStyle", "Style parsing failed.");
+            }
+        } catch (Resources.NotFoundException e) {
+            Log.e("MapStyle", "Can't find style. Error: ", e);
+        }
 
     }
 
@@ -185,4 +207,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
+    private void switchLocation() {
+        binding.switchLocation.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                        == PackageManager.PERMISSION_GRANTED) {
+                    mMap.setMyLocationEnabled(true);
+                }
+            } else {
+                mMap.setMyLocationEnabled(false);
+            }
+        });
+
+    }
 }
