@@ -1,39 +1,35 @@
 # 📍 Nav Drawer - App Android con Google Maps y Marcadores Interactivos
+
 ## 📖 Descripción
-Este proyecto es una aplicación Android que integra Google Maps para mostrar distintas estaciones en un mapa, cada una con un marcador personalizado, información breve y un diálogo interactivo con más detalles.
+Este proyecto es una aplicación Android que integra **Google Maps** para mostrar distintas estaciones en un mapa, cada una con un marcador personalizado, información breve y un **diálogo interactivo** con más detalles.
 
 El usuario puede:
-Visualizar su ubicación actual en el mapa (opcional).
-Consultar la información de cada estación pulsando sobre el marcador.
-Introducir una contraseña para desbloquear la siguiente estación.
-Alternar la visualización de su ubicación mediante un Switch.
+- Visualizar su ubicación actual en el mapa (opcional).
+- Consultar la información de cada estación pulsando sobre el marcador.
+- Introducir una contraseña para desbloquear la siguiente estación.
+- Alternar la visualización de su ubicación mediante un `Switch`.
 
 ## ✨ Características principales
-Integración de Google Maps API con SupportMapFragment.
-Marcadores personalizados con iconos propios.
-Ventanas de información (InfoWindow) y apertura de DialogFragment al pulsarlas.
-Control de permisos de ubicación en tiempo de ejecución.
-Estilo de mapa personalizado mediante recurso raw/map_style.json.
-Uso de FusedLocationProviderClient para obtener la última ubicación conocida.
-Interfaz adaptable usando ViewBinding (ActivityMainBinding).
+- Integración de **Google Maps API** con `SupportMapFragment`.
+- Marcadores personalizados con iconos propios.
+- Ventanas de información (`InfoWindow`) y apertura de `DialogFragment` al pulsarlas.
+- Control de permisos de ubicación en tiempo de ejecución.
+- Estilo de mapa personalizado mediante recurso `raw/map_style.json`.
+- Uso de `FusedLocationProviderClient` para obtener la última ubicación conocida.
+- Interfaz adaptable usando **ViewBinding** (`ActivityMainBinding`).
 
 ## 🛠️ Tecnologías utilizadas
-Java (Android)
-Google Maps API
-AndroidX
-ViewBinding
-Material Design Components
-FusedLocationProviderClient (Google Play Services Location)
+- Java (Android)
+- Google Maps API
+- AndroidX
+- ViewBinding
+- Material Design Components
+- FusedLocationProviderClient (Google Play Services Location)
 
 ## 🚀 Instalación y ejecución
-Clonar el repositorio:
-git clone https://github.com/AdriBelSer/nav_drawer.git
-Abrir en Android Studio.
-
-Configurar Google Maps API Key:
-Solicita una API Key en Google Cloud Console.
-Añádela en google_maps_api.xml dentro de res/values/.
-Ejecutar en un dispositivo o emulador con Google Play Services.
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/AdriBelSer/nav_drawer.git
 
 ## 📷 Capturas de pantalla
 <img alt="Screenshot 1" width="400" src="https://github.com/user-attachments/assets/423078ae-7a85-469e-8bfb-b237d942acda" />
