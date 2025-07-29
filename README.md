@@ -4,8 +4,11 @@ Este proyecto es una aplicación Android que integra Google Maps para mostrar di
 
 El usuario puede:
 Visualizar su ubicación actual en el mapa (opcional).
+
 Consultar la información de cada estación pulsando sobre el marcador.
+
 Introducir una contraseña para desbloquear la siguiente estación.
+
 Alternar la visualización de su ubicación mediante un Switch.
 
 ## ✨ Características principales
